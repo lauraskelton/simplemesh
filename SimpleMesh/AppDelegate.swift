@@ -16,7 +16,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: NSDictionary?) -> Bool {
         // Override point for customization after application launch.
+        
+        //#warning add a unique UUID for your app here. you can create one here: http://www.uuidgenerator.net
+        SimpleMesh.sharedInstance.simpleMeshAppID = "your-uuid-goes-here"
+        
+        setup()
+        
         return true
+    }
+    
+    func setup() {
+        PeerHelper.sharedInstance.setupPeer()
     }
 
     func applicationWillResignActive(application: UIApplication) {

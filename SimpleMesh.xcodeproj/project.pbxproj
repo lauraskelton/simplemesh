@@ -7,12 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8212FBD219479B4800D7A3A0 /* PeerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8212FBD119479B4800D7A3A0 /* PeerManager.swift */; };
 		8228B40419475460007AE664 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8228B40319475460007AE664 /* AppDelegate.swift */; };
 		8228B40619475460007AE664 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8228B40519475460007AE664 /* ViewController.swift */; };
 		8228B40919475460007AE664 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8228B40719475460007AE664 /* Main.storyboard */; };
 		8228B40B19475460007AE664 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8228B40A19475460007AE664 /* Images.xcassets */; };
 		8228B41719475460007AE664 /* SimpleMeshTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8228B41619475460007AE664 /* SimpleMeshTests.swift */; };
 		8228B421194754D3007AE664 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 8228B420194754D3007AE664 /* README.md */; };
+		8228B42419475665007AE664 /* SimpleMesh.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8228B42319475665007AE664 /* SimpleMesh.swift */; };
+		82D445D819477D8C00E2DA34 /* Peer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82D445D719477D8C00E2DA34 /* Peer.swift */; };
+		82EE582E19479207006F71D9 /* MultipeerConnectivity.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 82EE582D19479207006F71D9 /* MultipeerConnectivity.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,6 +30,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8212FBD119479B4800D7A3A0 /* PeerManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PeerManager.swift; sourceTree = "<group>"; };
 		8228B3FE19475460007AE664 /* SimpleMesh.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimpleMesh.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8228B40219475460007AE664 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8228B40319475460007AE664 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -36,6 +41,9 @@
 		8228B41519475460007AE664 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8228B41619475460007AE664 /* SimpleMeshTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleMeshTests.swift; sourceTree = "<group>"; };
 		8228B420194754D3007AE664 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = SOURCE_ROOT; };
+		8228B42319475665007AE664 /* SimpleMesh.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SimpleMesh.swift; sourceTree = "<group>"; };
+		82D445D719477D8C00E2DA34 /* Peer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Peer.swift; sourceTree = "<group>"; };
+		82EE582D19479207006F71D9 /* MultipeerConnectivity.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MultipeerConnectivity.framework; path = System/Library/Frameworks/MultipeerConnectivity.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +51,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				82EE582E19479207006F71D9 /* MultipeerConnectivity.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,11 +87,13 @@
 			isa = PBXGroup;
 			children = (
 				8228B420194754D3007AE664 /* README.md */,
+				82D445D3194765F300E2DA34 /* SimpleMesh */,
 				8228B40319475460007AE664 /* AppDelegate.swift */,
 				8228B40519475460007AE664 /* ViewController.swift */,
 				8228B40719475460007AE664 /* Main.storyboard */,
 				8228B40A19475460007AE664 /* Images.xcassets */,
 				8228B40119475460007AE664 /* Supporting Files */,
+				82EE582F19479214006F71D9 /* Frameworks */,
 			);
 			path = SimpleMesh;
 			sourceTree = "<group>";
@@ -110,6 +121,32 @@
 				8228B41519475460007AE664 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		82D445D3194765F300E2DA34 /* SimpleMesh */ = {
+			isa = PBXGroup;
+			children = (
+				82D445D619477D8300E2DA34 /* Classes */,
+				8228B42319475665007AE664 /* SimpleMesh.swift */,
+			);
+			name = SimpleMesh;
+			sourceTree = "<group>";
+		};
+		82D445D619477D8300E2DA34 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				82D445D719477D8C00E2DA34 /* Peer.swift */,
+				8212FBD119479B4800D7A3A0 /* PeerManager.swift */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		82EE582F19479214006F71D9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				82EE582D19479207006F71D9 /* MultipeerConnectivity.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -213,6 +250,9 @@
 			files = (
 				8228B421194754D3007AE664 /* README.md in Sources */,
 				8228B40619475460007AE664 /* ViewController.swift in Sources */,
+				8212FBD219479B4800D7A3A0 /* PeerManager.swift in Sources */,
+				82D445D819477D8C00E2DA34 /* Peer.swift in Sources */,
+				8228B42419475665007AE664 /* SimpleMesh.swift in Sources */,
 				8228B40419475460007AE664 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -330,6 +370,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = SimpleMesh/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -341,6 +382,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = SimpleMesh/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -401,6 +443,7 @@
 				8228B41C19475460007AE664 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8228B41D19475460007AE664 /* Build configuration list for PBXNativeTarget "SimpleMeshTests" */ = {
 			isa = XCConfigurationList;
@@ -409,6 +452,7 @@
 				8228B41F19475460007AE664 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -12,6 +12,7 @@
 		8228B40919475460007AE664 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8228B40719475460007AE664 /* Main.storyboard */; };
 		8228B40B19475460007AE664 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8228B40A19475460007AE664 /* Images.xcassets */; };
 		8228B41719475460007AE664 /* SimpleMeshTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8228B41619475460007AE664 /* SimpleMeshTests.swift */; };
+		8228B421194754D3007AE664 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 8228B420194754D3007AE664 /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +35,7 @@
 		8228B41019475460007AE664 /* SimpleMeshTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SimpleMeshTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8228B41519475460007AE664 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8228B41619475460007AE664 /* SimpleMeshTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleMeshTests.swift; sourceTree = "<group>"; };
+		8228B420194754D3007AE664 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +77,7 @@
 		8228B40019475460007AE664 /* SimpleMesh */ = {
 			isa = PBXGroup;
 			children = (
+				8228B420194754D3007AE664 /* README.md */,
 				8228B40319475460007AE664 /* AppDelegate.swift */,
 				8228B40519475460007AE664 /* ViewController.swift */,
 				8228B40719475460007AE664 /* Main.storyboard */,
@@ -208,6 +211,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8228B421194754D3007AE664 /* README.md in Sources */,
 				8228B40619475460007AE664 /* ViewController.swift in Sources */,
 				8228B40419475460007AE664 /* AppDelegate.swift in Sources */,
 			);
